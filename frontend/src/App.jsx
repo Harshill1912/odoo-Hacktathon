@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Vehicles from './pages/Vehicles';
 import Dispatch from './pages/Dispatch';
+import Maintenance from './pages/Maintenance';
 import Drivers from './pages/Drivers';
 import Expenses from './pages/Expenses';
 import Analytics from './pages/Analytics';
@@ -37,6 +38,14 @@ function App() {
             element={
               <ProtectedRoute roles={['manager', 'dispatcher']}>
                 <Layout><Dispatch /></Layout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/maintenance"
+            element={
+              <ProtectedRoute roles={['manager', 'dispatcher']}>
+                <Layout><Maintenance /></Layout>
               </ProtectedRoute>
             }
           />

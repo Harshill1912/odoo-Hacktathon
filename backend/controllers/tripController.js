@@ -33,7 +33,7 @@ const getTrip = async (req, res) => {
 // POST /api/trips - Create & dispatch a trip
 const createTrip = async (req, res) => {
   try {
-    const { vehicleId, driverId, cargoWeight, revenue } = req.body;
+    const { vehicleId, driverId, cargoWeight, revenue, origin, destination } = req.body;
 
     // Validate vehicle
     const vehicle = await Vehicle.findById(vehicleId);
@@ -73,6 +73,8 @@ const createTrip = async (req, res) => {
       startOdometer: vehicle.odometer,
       status: 'Dispatched',
       revenue: revenue || 0,
+      origin: origin || '',
+      destination: destination || '',
     });
 
     // Update vehicle & driver status

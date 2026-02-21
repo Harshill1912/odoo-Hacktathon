@@ -9,6 +9,8 @@ const tripSchema = new mongoose.Schema({
     enum: ['Draft', 'Dispatched', 'Completed', 'Cancelled'],
     default: 'Draft',
   },
+  origin: { type: String, default: '' },
+  destination: { type: String, default: '' },
   startOdometer: { type: Number, required: true },
   endOdometer: { type: Number, default: null },
   revenue: { type: Number, default: 0 },

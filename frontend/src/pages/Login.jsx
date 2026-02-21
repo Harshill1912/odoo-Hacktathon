@@ -84,7 +84,7 @@ const Login = () => {
               />
             </div>
 
-            <div className="mb-6">
+            <div className="mb-4">
               <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
               <input
                 type="password"
@@ -94,6 +94,16 @@ const Login = () => {
                 placeholder="Enter your password"
                 required
               />
+            </div>
+
+            <div className="mb-6 text-right">
+              <button
+                type="button"
+                onClick={() => alert('Please contact your fleet administrator to reset your password.')}
+                className="text-sm text-blue-600 hover:text-blue-800 font-medium"
+              >
+                Forgot Password?
+              </button>
             </div>
 
             <button

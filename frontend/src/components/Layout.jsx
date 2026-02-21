@@ -6,6 +6,7 @@ const navItems = [
   { path: '/dashboard', label: 'Dashboard', icon: '📊', roles: ['manager', 'dispatcher', 'safety', 'finance'] },
   { path: '/vehicles', label: 'Vehicles', icon: '🚛', roles: ['manager', 'dispatcher', 'safety', 'finance'] },
   { path: '/dispatch', label: 'Dispatch', icon: '📦', roles: ['manager', 'dispatcher'] },
+  { path: '/maintenance', label: 'Maintenance', icon: '🔧', roles: ['manager', 'dispatcher'] },
   { path: '/drivers', label: 'Drivers', icon: '👤', roles: ['manager', 'dispatcher', 'safety'] },
   { path: '/expenses', label: 'Expenses', icon: '💰', roles: ['manager', 'finance'] },
   { path: '/analytics', label: 'Analytics', icon: '📈', roles: ['manager', 'finance'] },
